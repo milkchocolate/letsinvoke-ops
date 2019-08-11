@@ -1,0 +1,13 @@
+#!/bin/bash -e
+cd $(dirname $0)/..
+
+COMPILED_TEMPLATE_PATH=./cloudformation/compiled-template.json
+
+AWS_REGION=cn-north-1
+STACK_NAME=letsinvoke
+
+aws cloudformation deploy \
+  --region $AWS_REGION \
+  --stack-name $STACK_NAME \
+  --template-file $COMPILED_TEMPLATE_PATH \
+  --capabilities CAPABILITY_IAM
