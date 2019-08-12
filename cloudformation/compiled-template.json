@@ -13,7 +13,7 @@
         "Letsinvoke": {
             "Type": "AWS::Serverless::Function",
             "Properties": {
-                "CodeUri": "s3://letsinvoke-packages/letsinvoke/3a26c2b065e60a51e53fd096417c5264",
+                "CodeUri": "s3://letsinvoke-packages/letsinvoke/6930a0d217fa54faea6ad66a3cf5cb28",
                 "FunctionName": "letsinvoke",
                 "Description": "Let's invoke",
                 "Handler": "org.mad.letsinvoke.Invoker::invoke",
